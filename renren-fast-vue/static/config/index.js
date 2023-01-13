@@ -6,6 +6,7 @@
 
   // api接口请求地址
   window.SITE_CONFIG['baseUrl'] = 'http://www.mall.com/api';
+  // window.SITE_CONFIG['baseUrl'] = 'http://127.0.0.1:30000/api';
 
   // cdn地址 = 域名 + 版本号
   window.SITE_CONFIG['domain']  = './'; // 域名

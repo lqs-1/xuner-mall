@@ -194,7 +194,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         // 获取用户得信息
         AccountRespTo account = UserLoginInterceptor.user.get();
 
-        // 获取订单信息 并且修改订单信息
+        // 获取订单信息 并且修改订单信息 并返回订单
         R requestAndAlterOrderResponse = orderOpenFeignClientService.requestAndAlterOrder(orderSn);
 
         // 根据获取到得order来修改用户成长值和积分

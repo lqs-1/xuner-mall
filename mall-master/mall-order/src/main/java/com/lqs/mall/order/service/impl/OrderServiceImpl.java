@@ -14,8 +14,10 @@ import com.lqs.mall.common.utils.pagination.PageUtils;
 import com.lqs.mall.common.utils.pagination.QueryPage;
 import com.lqs.mall.order.dao.OrderDao;
 import com.lqs.mall.order.dao.OrderItemDao;
+import com.lqs.mall.order.dao.PaymentInfoDao;
 import com.lqs.mall.order.entity.OrderEntity;
 import com.lqs.mall.order.entity.OrderItemEntity;
+import com.lqs.mall.order.entity.PaymentInfoEntity;
 import com.lqs.mall.order.feign.CartOpenFeignClientService;
 import com.lqs.mall.order.feign.MemberOpenFeignClientService;
 import com.lqs.mall.order.feign.ProductOpenFeignClientService;
@@ -69,6 +71,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
 
     @Autowired
     private OrderItemDao orderItemDao;
+
+    @Autowired
+    private PaymentInfoDao paymentInfoDao;
 
     @Autowired
     private OrderAutoCancelPublisher orderAutoCancelPublisher;
@@ -412,7 +417,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
     }
 
     /**
-     * 根据订单号获取订单和修改状态
+     * 根据订单号获取订单和修改状态 并返回订单
      * @param orderSn
      * @return
      */
@@ -420,9 +425,23 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
     @Override
     public OrderEntity requestAndAlterOrderByOrderSn(String orderSn) {
         OrderEntity order = this.baseMapper.selectOne(new LambdaQueryWrapper<OrderEntity>().eq(OrderEntity::getOrderSn, orderSn));
+
+        // 修改订单状态
         order.setStatus(Constant.orderStatus.PAY_ED.getCode());
         order.setModifyTime(new Date());
         this.baseMapper.updateById(order);
+
+        // 保存 支付信息表
+        PaymentInfoEntity paymentInfoEntity = new PaymentInfoEntity();
+        paymentInfoEntity.setOrderId(order.getId());
+        paymentInfoEntity.setOrderSn(orderSn);
+        paymentInfoEntity.setPaymentStatus(Constant.orderStatus.PAY_ED.toString());
+        paymentInfoEntity.setSubject(Constant.ORDER_PAY_SUBJECT);
+        paymentInfoEntity.setTotalAmount(order.getPayAmount());
+        paymentInfoEntity.setAlipayTradeNo(orderSn);
+        paymentInfoEntity.setConfirmTime(order.getModifyTime());
+        paymentInfoDao.insert(paymentInfoEntity);
+
 
         return order;
     }

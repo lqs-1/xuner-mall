@@ -53,7 +53,7 @@ public class OrderPayWebController {
 
 
     /**
-     * 订单支付完成以后去到member服务 member服务调用这个api进行订单得获取 和状态得修改
+     * 订单支付完成以后去到member服务 member服务调用这个api进行订单得获取 和状态得修改 并且返回订单对象
      * @param orderSn
      * @return
      */
