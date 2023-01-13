@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f325a01a-201f-45ae-9fa5-66cf547ea1dc" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/mall-coupon/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mall-member/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mall-member/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mall-order/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mall-product/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mall-ware/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/software/apache-maven-3.8.6" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Cf1uUryfRsSLR5tC3vqy1Eujjh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/grade/userdata/xunermall/graduation-project/mall-master/mall-member/src/main/java/com/lqs/mall/member/interceptor&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.14285713&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3dac265894b8b2dcafb6ce603f16c49c&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mall-member/src/main/java/com/lqs/mall/member/interceptor" />
+      <recent name="$PROJECT_DIR$/mall-member/src/main/java/com/lqs/mall/member/config" />
+      <recent name="$PROJECT_DIR$/mall-member/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/vo" />
+      <recent name="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mall-product/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mall-product/src/main/resources/templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lqs.mall.member.config" />
+      <recent name="com.lqs.seata.server.two.aop" />
+      <recent name="com.lqs.mall.order.config" />
+      <recent name="com.lqs.mall.ware.config" />
+      <recent name="com.lqs.mall.ware.vo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MavenRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="OrderServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lqs.mall.order.service.impl.OrderServiceImpl" />
+      <module name="mall-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lqs.mall.order.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallOrderApplicationTests.createBinding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lqs.mall.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lqs.mall.order" />
+      <option name="MAIN_CLASS_NAME" value="com.lqs.mall.order.MallOrderApplicationTests" />
+      <option name="METHOD_NAME" value="createBinding" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallOrderApplicationTests.createQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lqs.mall.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lqs.mall.order" />
+      <option name="MAIN_CLASS_NAME" value="com.lqs.mall.order.MallOrderApplicationTests" />
+      <option name="METHOD_NAME" value="createQueue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallOrderApplicationTests.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lqs.mall.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lqs.mall.order" />
+      <option name="MAIN_CLASS_NAME" value="com.lqs.mall.order.MallOrderApplicationTests" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mall-master/mall-product/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="AmqpRabbitMqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="AMQP-RabbitMQ" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.amap.rabbitmp.AmqpRabbitMqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.auth.MallAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallCartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-cart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.cart.MallCartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallCouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false">
+      <option name="ACTIVE_PROFILES" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
+      <module name="mall-coupon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.coupon.MallCouponApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.gateway.MallGatewayApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-member" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.member.MallMemberApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.order.MallOrderApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallProductApplication  10000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-product" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=10000" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.product.MallProductApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.product.MallProductApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.search.MallSearchApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallThirdPartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-third-part" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.thirdpart.MallThirdPartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="mall-ware" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.mall.ware.MallWareApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="renren-fast" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenrenGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="renren-generator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenGeneratorApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataServerOneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Seata-Server-One" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.seata.server.one.SeataServerOneApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataServerTwoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Seata-Server-Two" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lqs.seata.server.two.SeataServerTwoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.OrderServiceImpl" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JUnit.MallOrderApplicationTests.createBinding" />
+      <item itemvalue="JUnit.MallOrderApplicationTests.createQueue" />
+      <item itemvalue="JUnit.MallOrderApplicationTests.sendMessage" />
+      <item itemvalue="Spring Boot.MallOrderApplication" />
+      <item itemvalue="Spring Boot.SeataServerOneApplication" />
+      <item itemvalue="Spring Boot.SeataServerTwoApplication" />
+      <item itemvalue="Spring Boot.RenrenApplication" />
+      <item itemvalue="Spring Boot.AmqpRabbitMqApplication" />
+      <item itemvalue="Spring Boot.MallCartApplication" />
+      <item itemvalue="Spring Boot.MallAuthApplication" />
+      <item itemvalue="Spring Boot.MallThirdPartApplication" />
+      <item itemvalue="Spring Boot.MallProductApplication  10000" />
+      <item itemvalue="Spring Boot.MallSearchApplication" />
+      <item itemvalue="Spring Boot.MallCouponApplication" />
+      <item itemvalue="Spring Boot.MallGatewayApplication" />
+      <item itemvalue="Spring Boot.MallMemberApplication" />
+      <item itemvalue="Spring Boot.MallWareApplication" />
+      <item itemvalue="Spring Boot.RenrenGeneratorApplication" />
+      <item itemvalue="Spring Boot.MallProductApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Application.OrderServiceImpl" />
+        <item itemvalue="JUnit.MallOrderApplicationTests.sendMessage" />
+        <item itemvalue="JUnit.MallOrderApplicationTests.createBinding" />
+        <item itemvalue="JUnit.MallOrderApplicationTests.createQueue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f325a01a-201f-45ae-9fa5-66cf547ea1dc" name="Changes" comment="" />
+      <created>1659179048034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659179048034</updated>
+      <workItem from="1659179049274" duration="3423000" />
+      <workItem from="1659186291464" duration="8532000" />
+      <workItem from="1659194838324" duration="718000" />
+      <workItem from="1659247453498" duration="12633000" />
+      <workItem from="1659260633917" duration="2325000" />
+      <workItem from="1659263073369" duration="2057000" />
+      <workItem from="1659266508132" duration="11489000" />
+      <workItem from="1659316414995" duration="3142000" />
+      <workItem from="1659319571415" duration="646000" />
+      <workItem from="1659320523500" duration="1135000" />
+      <workItem from="1659321961312" duration="25997000" />
+      <workItem from="1659423444742" duration="15921000" />
+      <workItem from="1659491222776" duration="1938000" />
+      <workItem from="1659493174678" duration="13826000" />
+      <workItem from="1659751540869" duration="1984000" />
+      <workItem from="1659770523569" duration="638000" />
+      <workItem from="1659771193465" duration="229000" />
+      <workItem from="1659771454679" duration="365000" />
+      <workItem from="1659772762876" duration="11000" />
+      <workItem from="1659774588988" duration="10101000" />
+      <workItem from="1659938129947" duration="577000" />
+      <workItem from="1659938799569" duration="110000" />
+      <workItem from="1659939541629" duration="2737000" />
+      <workItem from="1660022431879" duration="24246000" />
+      <workItem from="1660352796742" duration="11866000" />
+      <workItem from="1660372760528" duration="1762000" />
+      <workItem from="1660729435984" duration="1423000" />
+      <workItem from="1660787351706" duration="6319000" />
+      <workItem from="1661054579146" duration="3117000" />
+      <workItem from="1661825269192" duration="12811000" />
+      <workItem from="1661939836702" duration="3000000" />
+      <workItem from="1662220029211" duration="1354000" />
+      <workItem from="1662258138053" duration="22278000" />
+      <workItem from="1662526591715" duration="4570000" />
+      <workItem from="1663493187403" duration="556000" />
+      <workItem from="1663493868616" duration="3682000" />
+      <workItem from="1663755518862" duration="768000" />
+      <workItem from="1663756326863" duration="17000" />
+      <workItem from="1663756365012" duration="17000" />
+      <workItem from="1663756390612" duration="631000" />
+      <workItem from="1663919749841" duration="6198000" />
+      <workItem from="1663984313134" duration="14359000" />
+      <workItem from="1664248158889" duration="1551000" />
+      <workItem from="1664334181252" duration="861000" />
+      <workItem from="1664335120024" duration="29008000" />
+      <workItem from="1664444967627" duration="3194000" />
+      <workItem from="1664524583768" duration="8267000" />
+      <workItem from="1664621429578" duration="1342000" />
+      <workItem from="1664625102168" duration="4143000" />
+      <workItem from="1664629302156" duration="165000" />
+      <workItem from="1664778213616" duration="12078000" />
+      <workItem from="1664811156467" duration="381000" />
+      <workItem from="1664847133501" duration="16779000" />
+      <workItem from="1664942630777" duration="14559000" />
+      <workItem from="1665038725885" duration="1557000" />
+      <workItem from="1665623437530" duration="1062000" />
+      <workItem from="1665652116073" duration="3539000" />
+      <workItem from="1665707158242" duration="6281000" />
+      <workItem from="1665730734290" duration="4892000" />
+      <workItem from="1665738594132" duration="4904000" />
+      <workItem from="1665810888825" duration="3961000" />
+      <workItem from="1665883584722" duration="1428000" />
+      <workItem from="1665897459369" duration="11785000" />
+      <workItem from="1666082622585" duration="5174000" />
+      <workItem from="1666061423704" duration="5061000" />
+      <workItem from="1666111274304" duration="7427000" />
+      <workItem from="1666173887918" duration="6810000" />
+      <workItem from="1666200099884" duration="5067000" />
+      <workItem from="1666255697702" duration="6311000" />
+      <workItem from="1666249457021" duration="151000" />
+      <workItem from="1666320279372" duration="5206000" />
+      <workItem from="1666333823671" duration="5580000" />
+      <workItem from="1666582068833" duration="14939000" />
+      <workItem from="1666602990132" duration="5235000" />
+      <workItem from="1666659602675" duration="8294000" />
+      <workItem from="1666667931163" duration="8833000" />
+      <workItem from="1666745761610" duration="21219000" />
+      <workItem from="1666775520533" duration="10237000" />
+      <workItem from="1666848141140" duration="4652000" />
+      <workItem from="1666921899912" duration="6316000" />
+      <workItem from="1666936297330" duration="16628000" />
+      <workItem from="1666957964879" duration="1628000" />
+      <workItem from="1672279218925" duration="2400000" />
+      <workItem from="1672296001498" duration="3998000" />
+      <workItem from="1672308162422" duration="4161000" />
+      <workItem from="1672372610332" duration="39238000" />
+      <workItem from="1672639023357" duration="16564000" />
+      <workItem from="1672657341476" duration="201000" />
+      <workItem from="1672795715217" duration="3194000" />
+      <workItem from="1672881595469" duration="48726000" />
+      <workItem from="1673071052313" duration="40024000" />
+      <workItem from="1673168763622" duration="835000" />
+      <workItem from="1673169703125" duration="13053000" />
+      <workItem from="1673183362311" duration="2776000" />
+      <workItem from="1673224743145" duration="5341000" />
+      <workItem from="1673412461851" duration="13243000" />
+      <workItem from="1673426212198" duration="14715000" />
+      <workItem from="1673441275057" duration="5130000" />
+      <workItem from="1673491045266" duration="6000" />
+      <workItem from="1673491514394" duration="22590000" />
+      <workItem from="1673515162531" duration="5203000" />
+      <workItem from="1673522935298" duration="5657000" />
+      <workItem from="1673572476158" duration="4670000" />
+      <workItem from="1673588388877" duration="5960000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:io.minio:minio" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/src/main/java/com/lqs/mall/search/service/impl/SearchServiceImpl.java</url>
+          <line>373</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-member/src/main/java/com/lqs/mall/member/service/impl/MemberServiceImpl.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-member/src/main/java/com/lqs/mall/member/app/MemberController.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AMQP-RabbitMQ/src/main/java/com/lqs/amap/rabbitmp/mp/consumer/MqConsumer.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AMQP-RabbitMQ/src/main/java/com/lqs/amap/rabbitmp/mp/consumer/MqConsumer.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/app/SpuInfoController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/app/SkuInfoController.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Seata-Transactional/Seata-Server-Two/src/main/java/com/lqs/seata/server/two/service/impl/UserServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-ware/src/main/java/com/lqs/mall/ware/service/impl/WareSkuServiceImpl.java</url>
+          <line>265</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-cart/src/main/java/com/lqs/mall/cart/service/impl/CartServiceImpl.java</url>
+          <line>229</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

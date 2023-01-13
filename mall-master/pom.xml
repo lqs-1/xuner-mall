@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+<!--    这个pom只作为项目的集中管理-->
+
+    <packaging>pom</packaging>
+
+    <description>父工程聚合项目</description>
+
+    <modules>
+<!--        通用依赖-->
+        <module>mall-common</module>
+
+        <module>mall-coupon</module>
+        <module>mall-member</module>
+        <module>mall-order</module>
+        <module>mall-product</module>
+        <module>mall-ware</module>
+        <module>mall-search</module>
+        <module>mall-auth</module>
+        <module>mall-third-part</module>
+        <module>mall-cart</module>
+
+<!--        网关-->
+        <module>mall-gateway</module>
+
+
+<!--        人人的后台的后端-->
+        <module>renren-fast</module>
+<!--        人人的代码生成-->
+        <module>renren-generator</module>
+
+
+<!--        rabbitMQ测试项目-->
+        <module>AMQP-RabbitMQ</module>
+<!--        Seata测试项目-->
+        <module>Seata-Transactional</module>
+    </modules>
+
+    <groupId>com.lqs.mall.master</groupId>
+    <artifactId>mall-master</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mall-product
+  cloud:
+    # springcloudtencent配置
+    # 注册中心配置
+    polaris:
+      address: grpc://localhost:8091 # 必填
+      namespace: dev # 全局 namespace 参数
+
+      # 配置中心配置
+      config:
+        # address: grpc://${独立的配置中心}:8093 # 选填，只有在配置中心和注册中心是两个不同的地址时才需要配置
+        # auto-refresh: true # 选填，当配置发布后，动态刷新 Spring 上下文，默认值为 true面
+        groups:
+          - name: mall-product-db # 注入自定义配置的配置分组
+            files: [ "config/mysql.yaml" ] # 注入自定义配置文件列表，当 key 冲突时，排在前面的配置文件优先级高于后面

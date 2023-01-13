@@ -1,0 +1,43 @@
+---
+code: 200000
+info: "execute success"
+type: "INSTANCE"
+service:
+  name: "mall-coupon"
+  namespace: "dev"
+  metadata:
+    internal-auto-created: "true"
+  ports: ""
+  business: ""
+  department: ""
+  cmdb_mod1: ""
+  cmdb_mod2: ""
+  cmdb_mod3: ""
+  comment: ""
+  owners: "Polaris"
+  ctime: "2022-07-31 16:18:43"
+  mtime: "2022-07-31 16:18:43"
+  revision: "09cd8689fab6777a6d2a8162ebe57f5146f760fe"
+  platform_id: ""
+instances:
+- id: "99e7a3eb17a3a50e394e48dc301e19d62080e474"
+  service: "mall-coupon"
+  namespace: "dev"
+  host: "192.168.1.102"
+  port: 3001
+  protocol: "http"
+  weight: 100
+  healthCheck:
+    type: "HEARTBEAT"
+    heartbeat:
+      ttl: 5
+  healthy: true
+  isolate: false
+  location: {}
+  metadata:
+    internal-ip: "192.168.1.102"
+    protocol: "http"
+    internal-address: "192.168.1.102:3001"
+  mtime: "2022-07-31 22:05:04"
+  revision: "c1be6674fe5a4781a06abf7e64d28445"
+  enableHealthCheck: true

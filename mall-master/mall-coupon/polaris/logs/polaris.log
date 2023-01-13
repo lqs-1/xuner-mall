@@ -1,0 +1,13 @@
+2022-07-31 17:36:59.103 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster BUILTIN_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.104 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster SERVICE_DISCOVER_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.104 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster SERVICE_CONFIG_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.104 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster HEALTH_CHECK_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.110 INFO [main :c.t.p.p.r.m.InMemoryRegistry] start to load local cache files from ./polaris/backup
+2022-07-31 17:36:59.122 INFO [main :c.t.p.p.r.m.InMemoryRegistry] loaded 0 services from local cache
+2022-07-31 17:36:59.125 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster BUILTIN_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.125 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster SERVICE_DISCOVER_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.125 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster SERVICE_CONFIG_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.125 INFO [main :c.t.p.p.c.g.ConnectionManager] [ServerConnector]cluster HEALTH_CHECK_CLUSTER, service null has been made ready
+2022-07-31 17:36:59.126 WARN [main :c.t.p.a.p.c.Extensions] router metadataRouter not found
+2022-07-31 17:36:59.126 WARN [main :c.t.p.a.p.c.Extensions] router ruleBasedRouter not found
+2022-07-31 17:36:59.126 WARN [main :c.t.p.a.p.c.Extensions] router nearbyBasedRouter not found

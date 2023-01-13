@@ -1,0 +1,339 @@
+package com.lqs.mall.common.constant;
+
+/**
+ * @author 李奇凇
+ * @date 2022年07月30日 下午10:47
+ * @do 相应对象默认状态码和状态信息的枚举，
+ *       SUCCESS和FAIL是通用的，
+ *       后面的1开头的都是成功,2开头都是失败
+ */
+public enum REnum {
+
+    // 用于不覆写，通用
+    SUCCESS(0, "success"),
+    // 用于不覆写，通用
+    FAIL(1, "fail"),
+
+    /**
+     * 下面的都是个人复写的
+     */
+    REQUEST_MENU_LIST_TREE_SUCCESS(10000, "获取三级列表数成功"),
+    REQUEST_MENU_LIST_TREE_FAIL(20000, "获取三级列表数失败"),
+
+    DELETE_SINGLE_CATEGORY_SUCCESS(10001, "删除单菜单成功"),
+    DELETE_SINGLE_CATEGORY_FAIL(20001, "删除单菜单失败"),
+
+    APPEND_SINGLE_CATEGORY_SUCCESS(10002, "添加单菜单成功"),
+    APPEND_SINGLE_CATEGORY_FAIL(20002, "添加单菜单失败"),
+
+    EDIT_SINGLE_CATEGORY_SUCCESS(10003, "修改单菜单成功"),
+    EDIT_SINGLE_CATEGORY_FAIL(20003, "修改单菜单失败"),
+
+    UPLOAD_FILE_SUCCESS(10004, "文件上传成功"),
+    UPLOAD_FILE_FAIL(20004, "文件上传失败"),
+
+    UPLOAD_FILE_EXCEPTION(20005, "文件上传异常"),
+
+    BRAND_APPEND_SUCCESS(10006, "品牌添加成功"),
+    BRAND_APPEND_FAIL(20006, "品牌添加失败"),
+
+    BRAND_EDIT_SUCCESS(10007, "品牌修改成功"),
+    BRAND_EDIT_FAIL(20007, "品牌修改失败"),
+
+    BRAND_DELETE_SUCCESS(10008, "品牌删除成功"),
+    BRAND_DELETE_FAIL(20008, "品牌删除失败"),
+
+    REQUEST_BRAND_LIST_SUCCESS(10009, "获取品牌列表成功"),
+    REQUEST_BRAND_LIST_FAIL(20009, "获取品牌列表失败"),
+
+    DELETE_FILE_SUCCESS(10010, "删除文件成功"),
+    DELETE_FILE_FAIL(20010, "删除文件失败"),
+
+    VALID_DATA_FAIL(20011, "数据校验失败"),
+
+    REQUEST_BRAND_SUCCESS(10012, "获取品牌信息成功"),
+    REQUEST_BRAND_FAIL(20012, "获取品牌信息失败"),
+
+    REQUEST_ATTRGROUP_BYID_SUCCESS(10013, "根据分类获取属性分组成功"),
+    REQUEST_ATTRGROUP_BYID_FAIL(20013, "根据分类获取属性分组失败"),
+
+
+    REQUEST_REBACK_ATTRGROUP_DATA_SUCCESS(10014, "获取属性分组回显成功"),
+    REQUEST_REBACK_ATTRGROUP_DATA_FAIL(20014, "获取属性分组回显失败"),
+
+    EDIT_ATTRGOUP_SUCCESS(10015, "修改属性分组成功"),
+    EDIT_ATTRGOUP_FAIL(20015, "修改属性分组失败"),
+
+    APPEND_ATTRGOUP_SUCCESS(10016, "添加属性分组成功"),
+    APPEND_ATTRGOUP_FAIL(20016, "添加属性分组失败"),
+
+    DELETE_ATTRGOUP_SUCCESS(10017, "删除属性分组成功"),
+    DELETE_ATTRGOUP_FAIL(20017, "删除属性分组失败"),
+
+    REQUEST_CATEGORY_AND_BRAND_BINDING_RELATION_LIST_UCCESS(10018, "获取分类品牌关系列表成功"),
+    REQUEST_CATEGORY_AND_BRAND_BINDING_RELATION_LIST_FAIL(20018, "获取分类品牌关系列表失败"),
+
+    APPEND_CATEGORY_AND_BRAND_BINDING_RELATION_SUCCESS(10019, "添加分类品牌关联关系成功"),
+    APPEND_CATEGORY_AND_BRAND_BINDING_RELATION_FAIL(20019, "添加分类品牌关联关系失败"),
+    APPEND_CATEGORY_AND_BRAND_BINDING_RELATION_EXIST(20020, "关联关系已存在"),
+
+    DELETE_CATEGORY_AND_BRAND_BINDING_RELATION_SUCCESS(10021, "删除分类品牌关联关系成功"),
+    DELETE_CATEGORY_AND_BRAND_BINDING_RELATION_FAIL(20021, "删除分类品牌关联关系失败"),
+
+    APPEND_BASE_ATTR_SUCCESS(10022, "基本属性添加成功"),
+    APPEND_BASE_ATTR_FAIL(20022, "基本属性添加失败"),
+
+    DELETE_ATTR_SUCCESS(10023, "属性删除成功"),
+    DELETE_ATTR_FAIL(20023, "属性删除失败"),
+
+    EDIT_BASE_ATTR_SUCCESS(10024, "基本属性修改成功"),
+    EDIT_BASE_ATTR_FAIL(20024, "基本属性修改失败"),
+
+    REQUEST_BASE_ATTR_SUCCESS(10025, "基本属性获取成功"),
+    REQUEST_BASE_ATTR_FAIL(20025, "基本属性获取失败"),
+
+    REQUEST_ATTRGROUP_SUCCESS(10026, "获取属性分组成功"),
+    REQUEST_ATTRGROUP_FAIL(20026, "获取属性分组失败"),
+
+    REQUEST_SALE_ATTR_SUCCESS(10027, "销售属性获取成功"),
+    REQUEST_SALE_ATTR_FAIL(20027, "销售属性获取失败"),
+
+    REQUEST_ATTR_SUCCESS(10028, "属性回显成功"),
+    REQUEST_ATTR_FAIL(20028, "属性回显失败"),
+
+    EDIT_SALE_ATTR_SUCCESS(10029, "销售属性修改成功"),
+    EDIT_SALE_ATTR_FAIL(20029, "销售属性修改失败"),
+
+    APPEND_SALE_ATTR_SUCCESS(10030, "销售属性添加成功"),
+    APPEND_SALE_ATTR_FAIL(20030, "销售属性添加失败"),
+
+
+    REQUEST_ATTR_ATTRGROUP_RELATION_SUCCESS(10031,"获取属性分组关联属性列表成功"),
+    REQUEST_ATTR_ATTRGROUP_RELATION_FAIL(20031,"获取属性分组关联属性列表失败"),
+
+    REQUEST_ATTR_ATTRGROUP_NO_RELATION_SUCCESS(10032,"获取属性分组未关联属性列表成功"),
+    REQUEST_ATTR_ATTRGROUP_NO_RELATION_FAIL(20032,"获取属性分组未关联属性列表失败"),
+
+
+    UPDATE_ATTR_ATTRGROUP_RELATION_SUCCESS(10033, "更新属性分组和属性关联成功"),
+    UPDATE_ATTR_ATTRGROUP_RELATION_FAIL(20033, "更新属性分组和属性关联失败"),
+
+    REMOVE_ATTR_ATTRGROUP_RELATION_SUCCESS(10034, "删除属性分组和属性关联成功"),
+    REMOVE_ATTR_ATTRGROUP_RELATION_FAIL(20034, "删除属性分组和属性关联失败"),
+
+    REQUEST_BRAND_INFO_BY_CATEGORYID_SUCCESS(10035, "根据分类获取品牌列表成功"),
+    REQUEST_BRAND_INFO_BY_CATEGORYID_FAIL(20035, "根据分类获取品牌列表失败"),
+
+    REQUEST_ATTRGROUP_AND_ATTR_OBJECT_LIST_BY_CATEGORYID_SUCCESS(10036, "根据商品三级分类获取对应属性组属性成功"),
+    REQUEST_ATTRGROUP_AND_ATTR_OBJECT_LIST_BY_CATEGORYID_FAIL(20036, "根据商品三级分类获取对应属性组属性失败"),
+
+    REQUEST_SALE_ATTR_LIST_BY_CATEGORYID_SUCCESS(10037, "根据商品三级分类获取对应销售属性成功"),
+    REQUEST_SALE_ATTR_LIST_BY_CATEGORYID_FAIL(20037, "根据商品三级分类获取对应销售属性失败"),
+
+    POST_AN_ITEM_SPU_SUCCESS(10038, "商品添加成功"),
+    POST_AN_ITEM_SPU_FAIL(20038, "商品添加失败"),
+
+    SPU_BOUNDS_SAVE_SUCCESS(10039, "商品积分保存成功"),
+    SPU_BOUNDS_SAVE_FAIL(20039, "商品积分保存失败"),
+
+    SKU_FULL_REDUCTION_SAVE_SUCCESS(10040, "商品sku满减保存成功"),
+    SKU_FULL_REDUCTION_SAVE_FAIL(20040, "商品sku满减保存失败"),
+
+    REQUEST_SPU_LIST_BY_PAGE_SUCCESS(10041, "获取spu分页列表成功"),
+    REQUEST_SPU_LIST_BY_PAGE_FAIL(20041, "获取spu分页列表失败"),
+
+    REQUEST_SKU_LIST_BY_PAGE_SUCCESS(10042, "获取sku分页列表成功"),
+    REQUEST_SKU_LIST_BY_PAGE_FAIL(20042, "获取sku分页列表失败"),
+
+    REQUEST_WARE_LIST_BY_PAGE_SUCCESS(10043, "获取仓库分页列表成功"),
+    REQUEST_WARE_LIST_BY_PAGE_FAIL(20043, "获取仓库分页列表失败"),
+
+    APPEND_WARE_SUCCESS(10044, "新增仓库成功"),
+    APPEND_WARE_FAIL(20044, "新增仓库失败"),
+
+    ALERT_WARE_SUCCESS(10045, "修改仓库成功"),
+    ALERT_WARE_FAIL(20045, "修改仓库失败"),
+
+    DELETE_WARE_SUCCESS(10046, "删除仓库成功"),
+    DELETE_WARE_FAIL(20046, "删除仓库失败"),
+
+    REQUEST_WARE_INFO_BY_ID_SUCCESS(10047, "获取仓库详情成功"),
+    REQUEST_WARE_INFO_BY_ID_FAIL(20047, "获取仓库详情失败"),
+
+    REQUEST_MEMBER_LEVEL_LIST_BY_PAGE_SUCCESS(10048, "获取会员等级分页列表成功"),
+    REQUEST_MEMBER_LEVEL_LIST_BY_PAGE_FAIL(20048, "获取会员等级分页列表失败"),
+
+    REQUEST_MEMBER_LEVEL_SUCCESS(10049, "获取会员等级详情成功"),
+    REQUEST_MEMBER_LEVEL_FAIL(20049, "获取会员等级详情失败"),
+
+    APPEND_MEMBER_LEVEL_SUCCESS(10050,"新增会员等级成功"),
+    APPEND_MEMBER_LEVEL_FAIL(20050,"新增会员等级失败"),
+
+    ALERT_MEMBER_LEVEL_SUCCESS(10051,"修改会员等级成功"),
+    ALERT_MEMBER_LEVEL_FAIL(20051,"修改会员等级失败"),
+
+    DELETE_MEMBER_LEVEL_SUCCESS(10052,"删除会员等级成功"),
+    DELETE_MEMBER_LEVEL_FAIL(20052,"删除会员等级失败"),
+
+    REQUEST_GOODS_WARE_LIST_BY_PAGE_SUCCESS(10053, "获取商品库存分页列表成功"),
+    REQUEST_GOODS_WARE_LIST_BY_PAGE_FAIL(20053, "获取商品库存分页列表失败"),
+
+    REQUEST_GOODS_WARE_SUCCESS(10054, "获取商品库存详情成功"),
+    REQUEST_GOODS_WARE_FAIL(20054, "获取商品库存详情失败"),
+
+    APPEND_GOODS_WARE_SUCCESS(10055, "新增商品库存成功"),
+    APPEND_GOODS_WARE_FAIL(20055, "新增商品库存失败"),
+
+    ALERT_GOODS_WARE_SUCCESS(10056, "修改商品库存成功"),
+    ALERT_GOODS_WARE_FAIL(20056, "修改商品库存失败"),
+
+    DELETE_GOODS_WARE_SUCCESS(10057, "删除商品库存成功"),
+    DELETE_GOODS_WARE_FAIL(20057, "删除商品库存失败"),
+
+    REQUEST_UNRECEIVE_PURCHASE_LIST_SUCCESS(10058, "获取有效采购单列表成功"),
+    REQUEST_UNRECEIVE_PURCHASE_LIST_FAIL(20058, "获取有效采购单列表失败"),
+
+    REQUEST_PURCHASE_LIST_BY_PAGE_SUCCESS(10059, "获取采购单分页列表成功"),
+    REQUEST_PURCHASE_LIST_BY_PAGE_FAIL(20059, "获取采购单分页列表失败"),
+
+    REQUEST_PURCHASE_NEED_LIST_BY_PAGE_SUCCESS(10060, "获取采购需求分页列表成功"),
+    REQUEST_PURCHASE_NEED_LIST_BY_PAGE_FAIL(20060, "获取采购需求分页列表失败"),
+
+    REQUEST_PURCHASE_NEED_SUCCESS(10061, "获取采购需求成功"),
+    REQUEST_PURCHASE_NEED_FAIL(20061, "获取采购需求失败"),
+
+    APPEND_PURCHASE_NEED_SUCCESS(10062, "新增采购需求成功"),
+    APPEND_PURCHASE_NEED_FAIL(20062, "新增获取采购需求失败"),
+
+    ALERT_PURCHASE_NEED_SUCCESS(10063, "修改采购需求成功"),
+    ALERT_PURCHASE_NEED_FAIL(20063, "修改采购需求失败"),
+
+    DELETE_PURCHASE_NEED_SUCCESS(10064, "删除采购需求成功"),
+    DELETE_PURCHASE_NEED_FAIL(20064, "删除采购需求失败"),
+
+    APPEND_PURCHASE_SUCCESS(10065, "新增采购单成功"),
+    APPEND_PURCHASE_FAIL(20065, "新增采购单失败"),
+
+    ALERT_PURCHASE_SUCCESS(10066, "修改采购单成功"),
+    ALERT_PURCHASE_FAIL(20066, "修改采购单失败"),
+
+    DELETE_PURCHASE_SUCCESS(10067, "删除采购单成功"),
+    DELETE_PURCHASE_FAIL(20067, "删除采购单成功"),
+
+    REQUEST_PURCHASE_SUCCESS(10068, "获取采购单详情成功"),
+    REQUEST_PURCHASE_FAIL(20068, "获取采购单详情失败"),
+
+    PUARCHASE_NEED_MERGE_SUCCESS(10069, "采购需求合并成功"),
+    PUARCHASE_NEED_MERGE_FAIL(20069, "采购需求合并失败"),
+
+    PUARCHASE_RECEIVED_SUCCESS(10070, "采购单领取成功"),
+    PUARCHASE_RECEIVED_FAIL(20070, "采购单领取失败"),
+
+    SUBMIT_PUARCHASE_SUCCESS(10071, "采购单提交成功"),
+    SUBMIT_PUARCHASE_FAIL(20071, "采购单提交失败"),
+
+    REQUEST_SKU_INFO_SUCCESS(10072, "获取商品信息成功"),
+    REQUEST_SKU_INFO_FAIL(20072, "获取商品信息失败"),
+
+    ALTER_SPU_ATTR_SUCCESS(10073, "spu属性更新成功"),
+    ALTER_SPU_ATTR_FAIL(20073, "spu属性更新失败"),
+
+    UP_SPU_SUCCESS(10074, "spu上架成功"),
+    UP_SPU_FAIL(20074, "spu上架失败"),
+
+    GET_WARE_SUCCESS(10075, "询问库存成功"),
+    GET_WARE_FAIL(20075, "询问库存失败"),
+
+    UP_PRODUCT_TO_ELASTICSEARCH_SUCCESS(10076, "商品上传elasticsearch成功"),
+    UP_PRODUCT_TO_ELASTICSEARCH_FAIL(20076, "商品上传elasticsearch失败"),
+
+
+    REQUEST_ATTRNAME_SUCCESS(10077, "获取商品属性名字成功"),
+    REQUEST_ATTRNAME_FAIL(20077, "获取商品属性名字失败"),
+
+    SMS_SENDCODE_SUCCESS(10078, "发送验证码成功"),
+    SMS_SENDCODE_FAIL(20078, "发送验证码失败"),
+
+    SMS_SENDCODE_FAST(20079, "发送验证码太频繁"),
+
+    COMMON_ACCOUNT_REGISTER_SUCCESS(10080, "普通用户注册成功"),
+    COMMON_ACCOUNT_USERNAME_EXIST(20080, "普通用户用户名已存在"),
+    COMMON_ACCOUNT_MOBILE_CODE_EXIST(20081, "普通用户手机号已存在"),
+
+    COMMON_ACCOUNT_LOGIN_SUCCESS(10082, "普通用户登录成功"),
+    COMMON_ACCOUNT_LOGIN_FAIL(20082, "普通用户登录失败"),
+
+    COMMON_ACCOUNT_LOGIN_PASSWORD_OR_ACCOUNT_ERROR(20083, "用户名或者密码错误"),
+
+
+    OAUTH2_SOCIAL_LOGIN_SUCCESS(10084, "社交登录成功"),
+    OAUTH2_SOCIAL_LOGIN_FAIL(20084, "社交登录失败"),
+
+    REQUEST_SKU_SALE_ATTR_VALUES_SUCCESS(10085, "获取商品销售属性成功"),
+    REQUEST_SKU_SALE_ATTR_VALUES_FAIL(20085, "获取商品销售属性失败"),
+
+    REQUEST_MEMBER_ADDRESS_SUCCESS(10086, "获取用户收获地址成功"),
+    REQUEST_MEMBER_ADDRESS_FAIL(20086, "获取用户收获地址失败"),
+
+    REQUEST_CURRENT_USER_CART_ITEM_LIST_SUCCESS(10087, "获取当前用户购物项目列表成功"),
+    REQUEST_CURRENT_USER_CART_ITEM_LIST_FAIL(20087, "获取当前用户购物项目列表失败"),
+
+    REQUEST_SKU_LATEST_PRICE_SUCCESS(10088, "获取商品最新价格成功"),
+    REQUEST_SKU_LATEST_PRICE_FAIL(20088, "获取商品最新价格失败"),
+
+    REQUEST_SPU_INFO_BY_SKUID_SUCCESS(10089, "根据skuId获取spu信息成功"),
+    REQUEST_SPU_INFO_BY_SKUID_FAIL(20089, "根据skuId获取spu信息失败"),
+
+    REQUEST_BRANDNAME_BY_BRANDID_SUCCESS(10090, "根据品牌id查询品牌名成功"),
+    REQUEST_BRANDNAME_BY_BRANDID_FAIL(20090, "根据品牌id查询品牌名失败"),
+
+    LOCK_SKU_STOCK_SUCCESS(10091, "商品库存锁定成功"),
+    LOCK_SKU_STOCK_FAIL(20091, "商品库存锁定失败"),
+
+    REQUEST_SKU_STOCK_SUCCESS(10092, "获取商品库存成功"),
+    REQUEST_SKU_STOCK_FAIL(20092, "获取商品库存失败"),
+
+    LOCK_SKU_STOCK_NUM_FAIL(20093, "商品库存不足"),
+
+    REQUEST_ORDER_STATUS_SUCCESS(10094, "获取订单信息成功"),
+    REQUEST_ORDER_STATUS_FAIL(20094, "获取订单信息失败"),
+
+    REQUEST_AND_ALTER_ORDER_SUCCESS(10095, "获取并修改订单成功"),
+    REQUEST_AND_ALTER_ORDER_FAIL(20095, "获取并修改订单失败"),
+
+    WARE_STOCK_DEDUCTION_SUCCESS(10096, "库存扣除成功"),
+    WARE_STOCK_DEDUCTION_FAIL(20096, "库存扣除失败"),
+
+    CLEAR_CART_SUCCESS(10097, "清空购物车成功"),
+    CLEAR_CART_FAIL(20097, "清空购物车失败"),
+
+    DELETE_CART_ITEM_SUCCESS(10098, "删除购物项成功"),
+    DELETE_CART_ITEM_FAIL(20098, "删除购物项失败"),
+
+    REQUEST_ORDER_PAGE_LIST_SUCCESS(10099, "获取订单分页数据成功"),
+    REQUEST_ORDER_PAGE_LIST_FAIL(20099, "获取订单分页数据失败"),
+
+
+
+
+
+    ;
+
+
+    private Integer statusCode;
+    private String statusMsg;
+
+    REnum(Integer statusCode, String statusMsg){
+        this.statusCode = statusCode;
+        this.statusMsg = statusMsg;
+    }
+
+    public Integer getStatusCode() {
+        return statusCode;
+    }
+
+    public String getStatusMsg() {
+        return statusMsg;
+    }
+}
+

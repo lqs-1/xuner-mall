@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<!--	springcloudtencent使用的springboot版本	-->
+		<!--		<version>2.6.9</version>-->
+		<!--	springcloudalibaba使用的springboot版本	-->
+		<version>2.6.4</version>
+		<!--        想使用seata做分布式事务得springboot版本-->
+		<!--        <version>2.3..12.RELEASE</version>-->
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>com.lqs.mall</groupId>
+	<artifactId>mall-coupon</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>mall-coupon</name>
+	<description>mall-coupon</description>
+
+
+	<properties>
+		<java.version>1.8</java.version>
+		<!--        springcloudtencent使用的springcloud的版本-->
+		<!--		<spring-cloud.version>2021.0.3</spring-cloud.version>-->
+		<!--        springcloudalibaba使用的springcloud的版本-->
+		<!--        <spring-cloud.version>2021.0.1</spring-cloud.version>-->
+		<spring-cloud.version>2021.0.1</spring-cloud.version>
+		<!--        想使用seata做分布式事务得springcloud版本-->
+		<!--        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>-->
+	</properties>
+
+	<dependencies>
+<!--		common模块-->
+		<dependency>
+			<groupId>com.lqs.mall.common</groupId>
+			<artifactId>mall-common</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!--        解决配置中心读取不到bootstrap.properties配置文件的-->
+		<!--使用nacos配置中心的时候，springboot的版本太高，不能够读取naccos配置中心的配置，所以使用高版本的时候导入这个坐标-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+		</dependency>
+	</dependencies>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<!--            springcloud依赖-->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

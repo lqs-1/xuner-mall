@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <parent>
+        <artifactId>mall-master</artifactId>
+        <groupId>com.lqs.mall.master</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lqs.mall.common</groupId>
+    <artifactId>mall-common</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <!--        springcloudtencent的版本-->
+        <spring-cloud-tencent.version>1.6.0-2021.0.3</spring-cloud-tencent.version>
+        <!--        springcloudtalibaba的版本-->
+        <spirng-cloude-alibaba.version>2021.0.1.0</spirng-cloude-alibaba.version>
+        <!--        想使用seata做分布式事务得springcloudalibaba版本-->
+        <!--        <spirng-cloude-alibaba.version>2.2.7.RELEASE</spirng-cloude-alibaba.version>-->
+    </properties>
+
+    <description>每个为服务公共的依赖,bean,工具类等</description>
+
+    <dependencies>
+        <!--        mybatisPlus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <!--        lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
+
+        <!--        jsr303验证-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.1.0.Final</version>
+        </dependency>
+
+        <!--       druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
+        <!--        mysql驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.20</version>
+        </dependency>
+
+        <!--       fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.79</version>
+        </dependency>
+
+        <!--        okHttp-->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+
+        <!--        polaris配置中心-->
+<!--        <dependency>-->
+<!--            <groupId>com.tencent.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-tencent-polaris-config</artifactId>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;        polaris服务注册发现&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.tencent.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-tencent-polaris-discovery</artifactId>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;        解决polaris报错问题&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.guava</groupId>-->
+<!--            <artifactId>guava</artifactId>-->
+<!--            <version>31.0.1-jre</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;        解决polaris报错问题&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.httpcomponents</groupId>-->
+<!--            <artifactId>httpcore</artifactId>-->
+<!--            <version>4.4.8</version>-->
+<!--        </dependency>-->
+
+
+        <!--        nacos注册中心,服务的注册发现-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!--        nacos配置管理-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--            springcloudtencent依赖-->
+<!--            <dependency>-->
+<!--                <groupId>com.tencent.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-tencent-dependencies</artifactId>-->
+<!--                <version>${spring-cloud-tencent.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+
+            <!--            springcloudaliibaba依赖-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${spirng-cloude-alibaba.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

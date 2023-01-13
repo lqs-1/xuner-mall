@@ -1,0 +1,106 @@
+server:
+  port: 3000
+
+spring:
+  cloud:
+    # springcloudtencent配置
+    # 注册中心配置
+    # polaris:
+    #   address: grpc://localhost:8091 # 必填
+    #   namespace: dev # 全局 namespace 参数
+
+    # 网关路由规则
+    gateway:
+      routes:
+        # product后台使用
+        - id: product-router
+          uri: lb://mall-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        # coupon
+        - id: coupon-router
+          uri: lb://mall-coupon
+          predicates:
+            - Path=/api/coupon/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        # ware
+        - id: ware-router
+          uri: lb://mall-ware
+          predicates:
+            - Path=/api/ware/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        # member
+        - id: member-router
+          uri: lb://mall-member
+          predicates:
+            - Path=/api/member/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        # order
+        - id: order-router
+          uri: lb://mall-order
+          predicates:
+            - Path=/api/order/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        # admin后台
+        - id: admin-router
+          uri: lb://mall-admin
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/renren-fast/$\{segment}
+
+
+        # product Web使用
+        - id: product-web-router
+          uri: lb://mall-product
+          predicates:
+            - Host=www.mall.com,item.mall.com # 这些域名或者子域名的负载均衡到对应的服务
+
+        # auth Web使用
+        - id: auth-web-router
+          uri: lb://mall-auth
+          predicates:
+            - Host=auth.mall.com # 这些域名或者子域名的负载均衡到对应的服务
+
+        # search Web使用
+        - id: search-web-router
+          uri: lb://mall-search
+          predicates:
+            - Host=search.mall.com # 这些域名或者子域名的负载均衡到对应的服务
+
+        # cart Web使用
+        - id: cart-web-router
+          uri: lb://mall-cart
+          predicates:
+            - Host=cart.mall.com # 这些域名或者子域名的负载均衡到对应的服务
+
+        # order Web使用
+        - id: order-web-router
+          uri: lb://mall-order
+          predicates:
+            - Host=order.mall.com # 这些域名或者子域名的负载均衡到对应的服务
+
+        # member Web使用
+        - id: member-web-router
+          uri: lb://mall-member
+          predicates:
+            - Host=member.mall.com # 这些域名或者子域名的负载均衡到对应的服务
+
+
+      # 高版本的springcloud使用，不然不能重写地址
+      discovery:
+        locator:
+          lower-case-service-id: true
+
+

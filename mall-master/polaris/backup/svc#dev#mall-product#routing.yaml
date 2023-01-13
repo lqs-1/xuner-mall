@@ -1,0 +1,7 @@
+---
+code: 200000
+info: "execute success"
+type: "ROUTING"
+service:
+  name: "mall-product"
+  namespace: "dev"

@@ -1,0 +1,43 @@
+---
+code: 200000
+info: "execute success"
+type: "INSTANCE"
+service:
+  name: "mall-product"
+  namespace: "dev"
+  metadata:
+    internal-auto-created: "true"
+  ports: ""
+  business: ""
+  department: ""
+  cmdb_mod1: ""
+  cmdb_mod2: ""
+  cmdb_mod3: ""
+  comment: ""
+  owners: "Polaris"
+  ctime: "2022-07-31 16:57:34"
+  mtime: "2022-07-31 16:57:34"
+  revision: "1b727fb7f356d9912e941e8d56227cd657f505fa"
+  platform_id: ""
+instances:
+- id: "5f1d84d359b3288953fa22acc123040d2b488e4f"
+  service: "mall-product"
+  namespace: "dev"
+  host: "192.168.1.102"
+  port: 3004
+  protocol: "http"
+  weight: 100
+  healthCheck:
+    type: "HEARTBEAT"
+    heartbeat:
+      ttl: 5
+  healthy: true
+  isolate: false
+  location: {}
+  metadata:
+    internal-address: "192.168.1.102:3004"
+    internal-ip: "192.168.1.102"
+    protocol: "http"
+  mtime: "2022-07-31 22:05:01"
+  revision: "0f5a63da554e46fab3cea9b3ae22ef9a"
+  enableHealthCheck: true

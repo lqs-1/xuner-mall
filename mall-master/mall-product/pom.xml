@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<!--	springcloudtencent使用的springboot版本	-->
+		<!--		<version>2.6.9</version>-->
+		<!--	springcloudalibaba使用的springboot版本	-->
+		<version>2.6.4</version>
+		<!--        想使用seata做分布式事务得springboot版本-->
+		<!--        <version>2.3..12.RELEASE</version>-->
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+
+	<groupId>com.lqs.mall</groupId>
+	<artifactId>mall-product</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>mall-product</name>
+	<description>mall-product</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<!--        springcloudtencent使用的springcloud的版本-->
+		<!--		<spring-cloud.version>2021.0.3</spring-cloud.version>-->
+		<!--        springcloudalibaba使用的springcloud的版本-->
+		<!--        <spring-cloud.version>2021.0.1</spring-cloud.version>-->
+		<spring-cloud.version>2021.0.1</spring-cloud.version>
+		<!--        想使用seata做分布式事务得springcloud版本-->
+		<!--        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>-->
+	</properties>
+
+	<dependencies>
+		<!--		common模块-->
+		<dependency>
+			<groupId>com.lqs.mall.common</groupId>
+			<artifactId>mall-common</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!--        解决配置中心读取不到bootstrap.properties配置文件的-->
+		<!--使用nacos配置中心的时候，springboot的版本太高，不能够读取naccos配置中心的配置，所以使用高版本的时候导入这个坐标-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+		</dependency>
+
+		<!--       thymeleaf模板引擎 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<!--		devtools页面实时更新 ctrl shift f9 关掉thymeleaf缓存-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+<!--		自定义的配置项，configurationProperties的时候使用-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+
+		<!--		引入redis-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<!-- 1.5的版本默认采用的连接池技术是jedis  2.0以上版本默认连接池是lettuce,
+           在这里采用jedis，所以需要排除lettuce的jar -->
+			<exclusions>
+				<exclusion>
+					<groupId>io.lettuce</groupId>
+					<artifactId>lettuce-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- 添加jedis客户端 -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+
+		<!--   springSession依赖     -->
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-data-redis</artifactId>
+		</dependency>
+
+
+		<!--		redisson-->
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+
+		<!--		springCache-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
