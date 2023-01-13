@@ -54,6 +54,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
 
         R result = twoFeignClientService.alter();
 
+        int i = 10/0;
+
 //        if (result.parseCode() > 20000){
 //            // 手动回滚
 //            GlobalTransactionContext.reload(RootContext.getXID()).rollback();

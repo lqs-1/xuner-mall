@@ -1,5 +1,23 @@
 ## mall商城项目
 
+#### Mysql
+##### 导出数据库
+```sql
+mysqldump -u userName -p password 数据库名字 > 位置+文件名字(sql文件)
+    
+1.导出整个数据库
+mysqldump -u 用户名 -p密码 数据库名 > 位置+导出的文件名(sql文件)
+
+
+2.导出一个表
+mysqldump -u 用户名 -p密码 数据库名 表名> 位置+导出的文件名(sql文件)
+```
+##### 导入数据库
+```sql
+set names utf8;
+source 文件位置(sql文件)
+```
+
 ---
 #### mybatis-plus
 

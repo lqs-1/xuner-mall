@@ -34,6 +34,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
             return userEntity;
         }).forEach(this.baseMapper::updateById);
 
-        int i = 10/0;
+        // int i = 10/0;
     }
 }
