@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f325a01a-201f-45ae-9fa5-66cf547ea1dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/lqs/mall/coupon/config/MybatisPlusPaginationInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/bounds.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/coupon-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/coupon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/couponspucategoryrelation-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/couponspucategoryrelation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/couponspurelation-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/couponspurelation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/full.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/history.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/homeadv-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/homeadv.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/homesubject-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/homesubjectspu-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/homesubjectspu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/memberprice-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/memberprice.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckill.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillpromotion-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillsession-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillsession.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillskunotice-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillskunotice.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillskurelation-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/seckillskurelation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/skufullreduction-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/skuladder-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/skuladder.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/spubounds-add-or-update.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../renren-fast-vue/src/views/modules/coupon/subject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/src/main/java/com/lqs/mall/member/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/src/main/java/com/lqs/mall/member/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/web/OrderPayWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/web/OrderPayWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../renren-fast-vue/static/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../renren-fast-vue/static/config/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="f325a01a-201f-45ae-9fa5-66cf547ea1dc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -501,7 +463,7 @@
       <workItem from="1673522935298" duration="5657000" />
       <workItem from="1673572476158" duration="4670000" />
       <workItem from="1673588388877" duration="5960000" />
-      <workItem from="1673594978946" duration="6486000" />
+      <workItem from="1673594978946" duration="6662000" />
     </task>
     <servers />
   </component>

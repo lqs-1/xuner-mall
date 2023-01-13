@@ -1,5 +1,10 @@
 ## mall商城项目
 
+> 查项目代码行数
+```shell
+git ls-files | xargs cat | wc -l
+```
+
 #### Mysql
 ##### 导出数据库
 ```sql
