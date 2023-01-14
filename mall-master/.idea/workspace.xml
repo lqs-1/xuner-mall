@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f325a01a-201f-45ae-9fa5-66cf547ea1dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/lqs/mall/common/to/SaleNumTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/lqs/mall/common/constant/REnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/lqs/mall/common/constant/REnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/config/AlipayTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/config/AlipayTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/feign/ProductOpenFeignClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/feign/ProductOpenFeignClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/vo/PayVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/vo/PayVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/web/OrderWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/main/java/com/lqs/mall/order/web/OrderWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/app/SkuInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/app/SkuInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/service/SkuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/service/SkuInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/service/impl/SkuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/lqs/mall/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -479,7 +468,8 @@
       <workItem from="1673588388877" duration="5960000" />
       <workItem from="1673594978946" duration="6662000" />
       <workItem from="1673611725204" duration="149000" />
-      <workItem from="1673674357401" duration="3807000" />
+      <workItem from="1673674357401" duration="3971000" />
+      <workItem from="1673713374807" duration="1642000" />
     </task>
     <servers />
   </component>

