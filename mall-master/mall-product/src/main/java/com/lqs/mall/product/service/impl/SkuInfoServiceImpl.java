@@ -4,6 +4,7 @@ import com.alibaba.cloud.commons.lang.StringUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lqs.mall.common.to.SaleNumTo;
 import com.lqs.mall.common.utils.pagination.PageUtils;
 import com.lqs.mall.common.utils.pagination.QueryPage;
 import com.lqs.mall.product.dao.*;
@@ -180,6 +181,22 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoDao, SkuInfoEntity> i
         SkuInfoEntity skuInfoEntity = this.baseMapper.selectOne(new LambdaQueryWrapper<SkuInfoEntity>().eq(SkuInfoEntity::getSkuId, skuId));
 
         return skuInfoEntity.getPrice();
+    }
+
+    /**
+     * 更新对应skuId得商品得销售量
+     * @param saleNumList
+     */
+    @Transactional(readOnly = false)
+    @Override
+    public void updateSkuSaleNum(List<SaleNumTo> saleNumList) {
+
+        for (SaleNumTo saleNumTo : saleNumList) {
+            SkuInfoEntity skuInfoEntity = this.baseMapper.selectById(saleNumTo.getSkuId());
+            skuInfoEntity.setSaleCount(skuInfoEntity.getSaleCount() + saleNumTo.getNum());
+            this.baseMapper.updateById(skuInfoEntity);
+        }
+
     }
 
 }

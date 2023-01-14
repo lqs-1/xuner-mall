@@ -1,6 +1,7 @@
 package com.lqs.mall.product.app;
 
 import com.lqs.mall.common.constant.REnum;
+import com.lqs.mall.common.to.SaleNumTo;
 import com.lqs.mall.common.utils.R;
 import com.lqs.mall.common.utils.pagination.PageUtils;
 import com.lqs.mall.product.entity.SkuInfoEntity;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 
@@ -26,6 +28,30 @@ import java.util.Map;
 public class SkuInfoController {
     @Autowired
     private SkuInfoService skuInfoService;
+
+
+    @PostMapping("update/sku/sale/num")
+    public R updateSkuSaleNum(@RequestBody List<SaleNumTo> saleNumList){
+
+        try{
+            // 程序代码
+            skuInfoService.updateSkuSaleNum(saleNumList);
+
+            return R.ok(REnum.UPDATE_SKU_SALE_NUM_SUCCESS.getStatusCode(),
+                    REnum.UPDATE_SKU_SALE_NUM_SUCCESS.getStatusMsg());
+        }catch(Exception e){
+            e.printStackTrace();
+            // 程序代码
+
+            return R.error(REnum.UPDATE_SKU_SALE_NUM_FAIL.getStatusCode(),
+                    REnum.UPDATE_SKU_SALE_NUM_FAIL.getStatusMsg());
+        }finally{
+            // 程序代码
+
+        }
+
+    }
+
 
 
     /**

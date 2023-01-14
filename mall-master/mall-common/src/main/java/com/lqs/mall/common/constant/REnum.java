@@ -313,6 +313,9 @@ public enum REnum {
     REQUEST_ORDER_PAGE_LIST_SUCCESS(10099, "获取订单分页数据成功"),
     REQUEST_ORDER_PAGE_LIST_FAIL(20099, "获取订单分页数据失败"),
 
+    UPDATE_SKU_SALE_NUM_SUCCESS(10100, "更新商品销售数量成功"),
+    UPDATE_SKU_SALE_NUM_FAIL(20100, "更新商品销售数量失败"),
+
 
 
 

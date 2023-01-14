@@ -1,9 +1,14 @@
 package com.lqs.mall.order.feign;
 
+import com.lqs.mall.common.to.SaleNumTo;
 import com.lqs.mall.common.utils.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
 
 /**
  * @author 李奇凇
@@ -20,5 +25,9 @@ public interface ProductOpenFeignClientService {
 
     @GetMapping("product/brand/brandName/{brandId}")
     R getBrandNameByBrandId(@PathVariable Long brandId);
+
+
+    @PostMapping("product/skuinfo/update/sku/sale/num")
+    R updateSkuSaleNum(@RequestBody List<SaleNumTo> saleNumList);
 
 }

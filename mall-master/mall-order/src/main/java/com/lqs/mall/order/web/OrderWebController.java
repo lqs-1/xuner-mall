@@ -41,7 +41,7 @@ public class OrderWebController {
      */
     @GetMapping("orderDelete/{orderSn}")
     public String orderDelete(@PathVariable("orderSn") String orderSn){
-        System.out.println(orderSn);
+        // System.out.println(orderSn);
         orderService.deleteOder(orderSn);
         return "redirect:http://member.mall.com/orderList";
     }

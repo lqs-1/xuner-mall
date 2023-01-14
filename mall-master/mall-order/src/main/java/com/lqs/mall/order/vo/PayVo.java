@@ -12,5 +12,5 @@ public class PayVo {
      * 收单:
      * 为了防止用户在订单支付页面一直不支付 导致订单被系统自动取消 库存被系统自动解锁 设置了这个之后 订单页面停留到了这个时间支付直接失败
      */
-    private String time_expire; // 订单绝对超时时间。格式为yyyy-MM-dd HH:mm:ss。超时时间范围：1m~15d
+    private String timeout_express; // 订单绝对超时时间。格式为yyyy-MM-dd HH:mm:ss。超时时间范围：1m~15d
 }

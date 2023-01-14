@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lqs.mall.common.constant.Constant;
+import com.lqs.mall.common.to.SaleNumTo;
 import com.lqs.mall.common.to.auth.AccountRespTo;
 import com.lqs.mall.common.to.mq.order.OrderSnTO;
 import com.lqs.mall.common.utils.R;
@@ -411,7 +412,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
             payVo.setOrderDesc(Constant.ORDER_PAY_DESC);
         }
         // 设置订单支付自动收单时间
-        payVo.setTime_expire(Constant.ORDER_PAY_TIMEOUT_EXPIRE);
+        payVo.setTimeout_express(Constant.ORDER_PAY_TIMEOUT_EXPIRE);
 
         return payVo;
     }
@@ -441,6 +442,27 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
         paymentInfoEntity.setAlipayTradeNo(orderSn);
         paymentInfoEntity.setConfirmTime(order.getModifyTime());
         paymentInfoDao.insert(paymentInfoEntity);
+
+        // 商品得销量添加
+        // skuId num
+        // 获取订单中每个购物项清单
+        List<OrderItemEntity> orderItemList = orderItemDao.selectList(new LambdaQueryWrapper<OrderItemEntity>().eq(OrderItemEntity::getOrderSn, orderSn));
+
+        List<SaleNumTo> saleNumToList = new ArrayList<>();
+
+        for (OrderItemEntity orderItem : orderItemList) {
+            Long skuId = orderItem.getSkuId(); // skuId
+            Integer skuQuantity = orderItem.getSkuQuantity(); // 商品得购买数量
+
+            SaleNumTo saleNumTo = new SaleNumTo();
+            saleNumTo.setNum(skuQuantity.longValue());
+            saleNumTo.setSkuId(skuId);
+
+            saleNumToList.add(saleNumTo);
+        }
+
+        // 修改商品得销售量
+        R updateSkuSaleNumResponse = productOpenFeignClientService.updateSkuSaleNum(saleNumToList);
 
 
         return order;
@@ -755,16 +777,22 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
 
 
     public static void main(String[] args) {
-        BigDecimal price = new BigDecimal("3232.32");
+//        BigDecimal price = new BigDecimal("3232.32");
+//
+//        String originStringPrice = price.toString();
+//
+//
+//        String stringPrice = originStringPrice.substring(0, originStringPrice.indexOf("."));
+//        Integer IntPrice = new Integer(stringPrice);
+//
+//
+//        System.out.println(IntPrice % 2 + stringPrice.length() * 2);
 
-        String originStringPrice = price.toString();
+
+        System.out.println(9/2);
 
 
-            String stringPrice = originStringPrice.substring(0, originStringPrice.indexOf("."));
-            Integer IntPrice = new Integer(stringPrice);
 
-
-            System.out.println(IntPrice % 2 + stringPrice.length() * 2);
 
     }
 
